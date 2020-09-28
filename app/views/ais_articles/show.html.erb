@@ -5,14 +5,24 @@
 <div class="center-div">
 <div class="card-article-show">
 <div class="article_info img_article_show">
-  <h1 class="feature"><%= @ais_article.title %></h1>
-<div class="display-info-article-show">
-  <p class="feature"><%= @ais_article.date %></p>
-  <p>-</p>
+  <h1 class="feature title-article"><%= @ais_article.title %></h1>
+<div class=" feature display-info-article-show">
+  <p><%= @ais_article.date %></p>
+  <p id="tiret">-</p>
   <p><%= @ais_article.lieu %></p>
+
 </div>
-<%= link_to @ais_article.website_url1 %>
-<p><%= @ais_article.website_url2 %></p>
+<div class="display-info-article-show">
+<% if @ais_article.website_url1 != ""  %>
+  <p class="feature link" ><%= link_to "Site internet", @ais_article.website_url1 %></p>
+<% end %>
+</div>
+<div class="display-info-article-show">
+
+<% if @ais_article.website_url2 != ""  %>
+ <p class="feature link" ><%= link_to "Site internet", @ais_article.website_url2 %></p>
+<% end %>
+</div>
 <div class="center-div-2">
 
   <%= image_tag("#{@ais_article.image_url}") %>
@@ -46,28 +56,28 @@
   <p><%= @ais_article.content_7 %></p>
   <%= image_tag("#{@ais_article.image_url_8}") %>
   <h5><%= @ais_article.legend_8 %></h5>
-  <p><%= @ais_article.content_8_en %></p>
+  <p id="english"><%= @ais_article.content_8_en %></p>
   <%= image_tag("#{@ais_article.image_url_9}") %>
   <h5><%= @ais_article.legend_9 %></h5>
-  <p><%= @ais_article.content_9_en %></p>
+  <p id="english"><%= @ais_article.content_9_en %></p>
   <%= image_tag("#{@ais_article.image_url_10}") %>
   <h5><%= @ais_article.legend_10 %></h5>
-  <p><%= @ais_article.content_10_en %></p>
+  <p id="english"> <%= @ais_article.content_10_en %></p>
   <%= image_tag("#{@ais_article.image_url_11}") %>
   <h5><%= @ais_article.legend_11 %></h5>
-  <p><%= @ais_article.content_11_en %></p>
+  <p id="english"><%= @ais_article.content_11_en %></p>
   <%= image_tag("#{@ais_article.image_url_12}") %>
   <h5><%= @ais_article.legend_12 %></h5>
-  <p><%= @ais_article.content_12_en %></p>
+  <p id="english"><%= @ais_article.content_12_en %></p>
   <%= image_tag("#{@ais_article.image_url_13}") %>
   <h5><%= @ais_article.legend_13 %></h5>
-  <p><%= @ais_article.content_13_en %></p>
+  <p id="english"><%= @ais_article.content_13_en %></p>
   <%= image_tag("#{@ais_article.image_url_14}") %>
   <h5><%= @ais_article.legend_14 %></h5>
-  <p><%= @ais_article.content_14_en %></p>
+  <p id="english"><%= @ais_article.content_14_en %></p>
   <%= image_tag("#{@ais_article.image_url_15}") %>
   <h5><%= @ais_article.legend_15 %></h5>
-  <p><%= @ais_article.content_15_en %></p>
+  <p id="english"><%= @ais_article.content_15_en %></p>
 </div>
 </div>
 </div>

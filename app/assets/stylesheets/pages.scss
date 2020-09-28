@@ -9,6 +9,10 @@
   border-radius: 50%;
 }
 
+.link a{
+color:black !important;
+}
+
 .avatar-large img {
   width: 160px;
   height: 160px;
@@ -773,9 +777,14 @@ font-size: 1rem;
 }
 
 .display-info-article-show p{
-margin: 10px
+margin-top: 10px;
+margin-bottom: 10px;
+
 }
 
+#tiret{
+  margin:10px;
+}
 
 .container-ml{
   text-align:center !important;
@@ -892,7 +901,7 @@ margin: 30px;
 @media (min-width: 300px) {
 .img_article_show iframe{
 width: 280px !important;
-height: 130px !important;
+height: 200px !important;
 border-radius: 10px;
 margin: 30px;
 }
@@ -1218,8 +1227,9 @@ height: 448px;
 #text-interne a{
   z-index: 100;
   position: absolute;
-  left: 0px;
-  top: 50px;
+  left: -50px;
+  top: 0px;
+  width: 150px;
   font-family: 'Bebas Neue', cursive;
   font-size: 24px;
   line-height: 30px;
@@ -1229,8 +1239,9 @@ height: 448px;
 #text-interne a:hover{
   z-index: 100;
   position: absolute;
-  left: 0px;
-  top: 50px;
+  left: -50px;
+  top: 0px;
+  width: 150px;
   font-family: 'Bebas Neue', cursive;
   font-size: 24px;
   line-height: 30px;
@@ -1287,8 +1298,9 @@ height: 448px;
 #text-date a{
   z-index: 100;
   position: absolute;
-  left: 0px;
-  top: 80px;
+  left: -10px;
+  top: 50px;
+   text-align:center;
   font-family: 'Bebas Neue', cursive;
   font-size: 24px;
   line-height: 30px;
@@ -1299,7 +1311,8 @@ height: 448px;
   z-index: 100;
   position: absolute;
       left: 0px;
-    top: 80px;
+    top: 50px;
+    text-align:center;
   font-family: 'Bebas Neue', cursive;
   font-size: 24px;
   line-height: 30px;
@@ -1537,6 +1550,7 @@ width: 850px !important;
 
 .feature {
   margin-left: 80px !important;
+      margin-right: 80px !important;
 }
 
 .article_infox h1{
@@ -1560,11 +1574,16 @@ line-height: 40px;
 margin-left: 0px;
 }
 
+#english {
+  color:grey !important;
+}
+
 .title-article{
 font-family: 'Bebas Neue', cursive;
+    margin-top: 50px;
 font-style: normal;
 font-weight: normal;
-font-size: 40px;
+font-size: 40px !important;
 line-height: 50px;
 color: #E30613;
 }
@@ -1819,7 +1838,7 @@ width:390px !important;
 @media (max-width: 800px) {
 .feature{
 margin-left:0px !important;
-font-size: 18px !important;
+font-size: 22px !important;
 }
 }
 
