@@ -1,0 +1,73 @@
+<div class="container-ok">
+  <div class="d-flex container justify-content-center display-bubble">
+
+
+
+    <%= simple_form_for(@ais_article) do |f| %>
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+           <h3 class="title-new">Modifier un article</h3>
+          <p class="conseil">Essayez de répartir le texte sur les différents champs intitulés "content" pour plus d'harmonie.</p>
+           <%= f.input :title %>
+           <%= f.input :sous_titre %>
+           <%= f.input :date %>
+           <%= f.input :lieu %>
+           <%= f.input :video %>
+            <%= f.input :website_url1 %>
+           <%= f.input :website_url2 %>
+           <%= f.input :image_url %>
+           <%= f.input :legend %>
+           <%= f.input :content %>
+           <%= f.input :image_url_2 %>
+           <%= f.input :legend_2 %>
+           <%= f.input :content_2 %>
+           <%= f.input :image_url_3 %>
+           <%= f.input :legend_3 %>
+           <%= f.input :content_3 %>
+           <%= f.input :image_url_4 %>
+           <%= f.input :legend_4 %>
+           <%= f.input :content_4 %>
+           <%= f.input :image_url_5 %>
+           <%= f.input :legend_5 %>
+           <%= f.input :content_5 %>
+           <%= f.input :image_url_6 %>
+           <%= f.input :legend_6 %>
+           <%= f.input :content_6 %>
+           <%= f.input :image_url_7 %>
+           <%= f.input :legend_7 %>
+           <%= f.input :content_7 %>
+           <%= f.input :image_url_8 %>
+           <%= f.input :legend_8 %>
+           <%= f.input :content_8_en %>
+           <%= f.input :image_url_9 %>
+           <%= f.input :legend_9 %>
+           <%= f.input :content_9_en %>
+           <%= f.input :image_url_10 %>
+           <%= f.input :legend_10 %>
+           <%= f.input :content_10_en %>
+           <%= f.input :image_url_11 %>
+           <%= f.input :legend_11 %>
+           <%= f.input :content_11_en %>
+           <%= f.input :image_url_12 %>
+           <%= f.input :legend_12 %>
+           <%= f.input :content_12_en %>
+           <%= f.input :image_url_13 %>
+           <%= f.input :legend_13 %>
+           <%= f.input :content_13_en %>
+           <%= f.input :image_url_14 %>
+           <%= f.input :legend_14 %>
+           <%= f.input :content_14_en %>
+           <%= f.input :image_url_15 %>
+           <%= f.input :legend_15 %>
+           <%= f.input :content_15_en %>
+
+         </div>
+
+         <div class="form-actions">
+           <%= f.submit "Save changes", class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>
+</div>

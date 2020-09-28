@@ -1,0 +1,48 @@
+<div class="container-ok">
+<%= render "components/header" %>
+<div class="img-back-blanc"><%= link_to(image_tag("back.png", alt: "QQ29 - all rights reserved."), root_path) %></div>
+
+<% if user_signed_in? %>
+<div class="flex-admin-trois"><%= link_to "Ajouter une catégorie", new_category_path %></div>
+<% end %>
+
+<% if user_signed_in? %>
+<div class="flex-admin-trois"><%= link_to "Ajouter un avatar", new_avatar_path %></div>
+<% end %>
+
+
+<div class="color-div-avatar-red">
+  <h1 class="text-avatar-center-w">Membres actifs</h1>
+<div class="display-grid-avatar">
+
+    <% @rir_articles = @theme.rir_articles%>
+    <% RirArticle.order(:theme_id).each do |rir_article| %>
+
+
+          <div class="card-trip-cinq card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', rir_article_path(rir_article),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_rir_article_path(rir_article.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{rir_article.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", rir_articles %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+
+<%= render "components/footer" %>
+</div>

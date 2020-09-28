@@ -1,0 +1,38 @@
+
+<div class="container-ok">
+  <%= render "components/header" %>
+  <br>
+  <br>
+  <br>
+
+<% if user_signed_in? %>
+<div class="flex-admin-trois"><%= link_to 'Créer un thème', new_theme_path %></div>
+<% end %>
+
+<div class="center-div-2">
+  <p class="detailh">Chaque mois, quatre photographes publient un documentaire photographique accompagné d’un texte autour d’une même thématique relative à l’art contemporain. Ces travaux mis en parallèle permettent de montrer la richesse des points de vue et d’approfondir la recherche sur un même sujet. </p>
+  <br>
+   <p class="detailg">Each month, four photographers publish a photographic documentary accompanied by a text on a common theme relating to contemporary art. These works put in parallel allow to show the richness of the points of view and to deepen the research on the same subject.</p>
+   <br>
+ </div>
+ <br>
+  <br>
+<div class="display-grid-card">
+ <% @themes.each do |theme| %>
+  <div id="container-t">
+    <div id="image" class="img-card"><%= image_tag("#{theme.img_theme}") %></div>
+      <div id="text" class="solid">
+        <% if user_signed_in? %>
+            <h1 id="text-destroy"> <%= link_to 'Destroy', theme, method: :delete, data: { confirm: 'Are you sure?' } %></h1>
+            <h1 id="text-edit"> <%= link_to 'Edit', edit_theme_path(theme) %></h1>
+        <% end %>
+        <h1 id="text-int"><%= link_to "#{theme.name_theme}", theme_path(theme.id)%></h1>
+      </div>
+  </div>
+  <% end %>
+   </div>
+
+</div>
+<%= render "components/footer" %>
+</div>
+

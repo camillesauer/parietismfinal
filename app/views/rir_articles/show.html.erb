@@ -1,0 +1,72 @@
+<div class="container-ok">
+<%= render "components/header" %>
+<body style="background-color:black;">
+  <div class="img-back-blanc"><%= link_to(image_tag("cc.png", alt: "QQ29 - all rights reserved."), themes_path) %></div>
+<div class="center-div">
+<div class="card-article-show">
+<div class="article_info img_article_show">
+  <h1 class="feature title-article"><%= @rir_article.title_rir %></h1>
+  <h2 class="feature title-article-b"><%= @rir_article.sous_titre_rir %></h2>
+<div class="display-info-article-show">
+  <p class="feature"><%= @rir_article.date_rir %></p>
+  <p>-</p>
+  <p><%= @rir_article.lieu_rir %></p>
+</div>
+<div class="center-div-2">
+
+  <%= image_tag("#{@rir_article.image_1}") %>
+  <h5><%= @rir_article.legend1 %></h5>
+  <p><%= @rir_article.contenu_1 %></p>
+ <% if @rir_article.video_url != ""  %>
+  <iframe width="845" height="560"
+    src="<%= @rir_article.video_url %>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <% end %>
+  <%= image_tag("#{@rir_article.image_2}") %>
+  <h5><%= @rir_article.legend2 %></h5>
+  <p><%= @rir_article.contenu_2 %></p>
+  <%= image_tag("#{@rir_article.image_3}") %>
+  <h5><%= @rir_article.legend3 %></h5>
+  <p><%= @rir_article.contenu_3 %></p>
+  <%= image_tag("#{@rir_article.image_4}") %>
+  <h5><%= @rir_article.legend4 %></h5>
+  <p><%= @rir_article.contenu_4 %></p>
+  <%= image_tag("#{@rir_article.image_5}") %>
+  <h5><%= @rir_article.legend5 %></h5>
+  <p><%= @rir_article.contenu_5 %></p>
+  <%= image_tag("#{@rir_article.image_6}") %>
+  <h5><%= @rir_article.legend6 %></h5>
+  <p><%= @rir_article.contenu_6 %></p>
+  <%= image_tag("#{@rir_article.image_7}") %>
+  <h5><%= @rir_article.legend7 %></h5>
+  <p><%= @rir_article.contenu_7 %></p>
+  <%= image_tag("#{@rir_article.image_8}") %>
+  <h5><%= @rir_article.legend8 %></h5>
+  <p><%= @rir_article.contenu_8 %></p>
+  <%= image_tag("#{@rir_article.image_9}") %>
+  <h5><%= @rir_article.legend9 %></h5>
+  <p><%= @rir_article.contenu_9 %></p>
+  <%= image_tag("#{@rir_article.image_10}") %>
+  <h5><%= @rir_article.legend10 %></h5>
+  <p><%= @rir_article.contenu_10 %></p>
+  <%= image_tag("#{@rir_article.image_11}") %>
+  <h5><%= @rir_article.legend11 %></h5>
+  <%= image_tag("#{@rir_article.image_12}") %>
+  <h5><%= @rir_article.legend12 %></h5>
+  <%= image_tag("#{@rir_article.image_13}") %>
+  <h5><%= @rir_article.legend13 %></h5>
+  <%= image_tag("#{@rir_article.image_14}") %>
+  <h5><%= @rir_article.legend14 %></h5>
+  <%= image_tag("#{@rir_article.image_15}") %>
+  <h5><%= @rir_article.legend15 %></h5>
+</div>
+</div>
+</div>
+</div>
+
+<%= render "components/footer" %>
+</body>
+</div>

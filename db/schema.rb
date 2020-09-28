@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_28_130853) do
+ActiveRecord::Schema.define(version: 2020_09_28_180058) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -137,14 +137,14 @@ ActiveRecord::Schema.define(version: 2020_09_28_130853) do
     t.text "legend15"
     t.text "contenu_6"
     t.text "contenu_7"
-    t.text "content_8_en"
-    t.text "content_9_en"
-    t.text "content_10_en"
-    t.text "content_11_en"
-    t.text "content_12_en"
-    t.text "content_13_en"
-    t.text "content_14_en"
-    t.text "content_15_en"
+    t.text "contenu_8_en"
+    t.text "contenu_9_en"
+    t.text "contenu_10_en"
+    t.text "contenu_11_en"
+    t.text "contenu_12_en"
+    t.text "contenu_13_en"
+    t.text "contenu_14_en"
+    t.text "contenu_15_en"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -157,6 +157,18 @@ ActiveRecord::Schema.define(version: 2020_09_28_130853) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "name_theme"
     t.string "img_theme"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

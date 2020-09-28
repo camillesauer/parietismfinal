@@ -1,0 +1,26 @@
+<div class="container-ok">
+  <div class="d-flex container justify-content-center display-bubble">
+
+
+
+    <%= simple_form_for(@avatar) do |f| %>
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+            <h3 class="title-new">Modifier un avatar</h3>
+           <%= f.input :nom %>
+           <%= f.input :prenom %>
+           <%= f.input :role %>
+           <%= f.input :bio_url %>
+           <%= f.input :img_url %>
+           <%= f.select :category_id, Category.all.map {|c| [c.name, c.id]}%>
+
+         </div>
+
+         <div class="form-actions">
+           <%= f.submit "Enregistrer", class: "btn btn-danger title-new" %>
+         </div>
+       <% end %>
+</div>
+</div>

@@ -1,0 +1,35 @@
+
+<div class="container-ok">
+  <%= render "components/header" %>
+<br>
+<br>
+<br>
+
+<div class="flex-admin-trois">
+<% if user_signed_in? %>
+<div class="btn-desk"><%= link_to "Créer un article", new_rir_article_path %></div>
+<% end %>
+</div>
+
+<div class="display-grid-card">
+ <% @theme.rir_articles.each do |rir_article| %>
+  <div id="container-t">
+    <div id="image" class="img-card"><%= image_tag("#{rir_article.image_1}") %></div>
+      <div id="text" class="solid">
+        <% if user_signed_in? %>
+            <h1 id="text-destroy"> <%= link_to 'Supprimer', rir_article_path(rir_article.id),
+            method: :delete,
+            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></h1>
+            <h1 id="text-edit"> <%= link_to "Editer", edit_rir_article_path(rir_article.id)%></h1>
+        <% end %>
+        <h1 id="text-interne"><%= link_to "#{rir_article.title_rir}", rir_article_path(rir_article.id)%></h1>
+        <h1 id="text-date"><%= link_to "#{rir_article.sous_titre_rir}", rir_article_path(rir_article.id)%></h1>
+      </div>
+  </div>
+  <% end %>
+   </div>
+   </div>
+<%= render "components/footer" %>
+</div>
+
+
