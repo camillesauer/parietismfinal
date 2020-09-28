@@ -1,0 +1,2 @@
+class AisArticlesController < ApplicationController
+end

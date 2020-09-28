@@ -1,0 +1,2 @@
+module RirArticlesHelper
+end

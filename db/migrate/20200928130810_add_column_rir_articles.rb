@@ -1,0 +1,57 @@
+class AddColumnRirArticles < ActiveRecord::Migration[6.0]
+  def change
+    add_column :rir_articles, :url1, :text
+    add_column :rir_articles, :url2, :text
+    add_column :rir_articles, :video_url, :text
+    add_column :rir_articles, :legend1, :text
+    add_column :rir_articles, :legend2, :text
+    add_column :rir_articles, :legend3, :text
+    add_column :rir_articles, :legend4, :text
+    add_column :rir_articles, :legend5, :text
+    add_column :rir_articles, :legend6, :text
+    add_column :rir_articles, :legend7, :text
+    add_column :rir_articles, :legend8, :text
+    add_column :rir_articles, :legend9, :text
+    add_column :rir_articles, :legend10, :text
+    add_column :rir_articles, :title_rir, :text
+    add_column :rir_articles, :sous_titre_rir, :text
+    add_column :rir_articles, :date_rir, :text
+    add_column :rir_articles, :lieu_rir, :text
+    add_column :rir_articles, :image_1, :text
+    add_column :rir_articles, :contenu_1, :text
+    add_column :rir_articles, :contenu_2, :text
+    add_column :rir_articles, :contenu_3, :text
+    add_column :rir_articles, :contenu_4, :text
+    add_column :rir_articles, :contenu_5, :text
+    add_column :rir_articles, :image_2, :text
+    add_column :rir_articles, :image_3, :text
+    add_column :rir_articles, :image_4, :text
+    add_column :rir_articles, :image_5, :text
+    add_column :rir_articles, :image_6, :text
+    add_column :rir_articles, :image_7, :text
+    add_column :rir_articles, :image_8, :text
+    add_column :rir_articles, :image_9, :text
+    add_column :rir_articles, :image_10, :text
+    add_column :rir_articles, :image_11, :text
+    add_column :rir_articles, :image_12, :text
+    add_column :rir_articles, :image_13, :text
+    add_column :rir_articles, :image_14, :text
+    add_column :rir_articles, :image_15, :text
+    add_column :rir_articles, :theme_id, :string
+    add_column :rir_articles, :legend11, :text
+    add_column :rir_articles, :legend12, :text
+    add_column :rir_articles, :legend13, :text
+    add_column :rir_articles, :legend14, :text
+    add_column :rir_articles, :legend15, :text
+    add_column :rir_articles, :contenu_6, :text
+    add_column :rir_articles, :contenu_7, :text
+    add_column :rir_articles, :content_8_en, :text
+    add_column :rir_articles, :content_9_en, :text
+    add_column :rir_articles, :content_10_en, :text
+    add_column :rir_articles, :content_11_en, :text
+    add_column :rir_articles, :content_12_en, :text
+    add_column :rir_articles, :content_13_en, :text
+    add_column :rir_articles, :content_14_en, :text
+    add_column :rir_articles, :content_15_en, :text
+  end
+end

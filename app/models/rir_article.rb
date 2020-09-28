@@ -1,0 +1,2 @@
+class RirArticle < ApplicationRecord
+end

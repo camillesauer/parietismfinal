@@ -1,0 +1,2 @@
+class AisArticle < ApplicationRecord
+end

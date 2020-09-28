@@ -1,0 +1,56 @@
+class AddColumnAisArticles < ActiveRecord::Migration[6.0]
+  def change
+    add_column :ais_articles, :website_url1, :text
+    add_column :ais_articles, :website_url2, :text
+    add_column :ais_articles, :video, :text
+    add_column :ais_articles, :legend, :text
+    add_column :ais_articles, :legend_2, :text
+    add_column :ais_articles, :legend_3, :text
+    add_column :ais_articles, :legend_4, :text
+    add_column :ais_articles, :legend_5, :text
+    add_column :ais_articles, :legend_6, :text
+    add_column :ais_articles, :legend_7, :text
+    add_column :ais_articles, :legend_8, :text
+    add_column :ais_articles, :legend_9, :text
+    add_column :ais_articles, :legend_10, :text
+    add_column :ais_articles, :title, :text
+    add_column :ais_articles, :sous_titre, :text
+    add_column :ais_articles, :date, :text
+    add_column :ais_articles, :lieu, :text
+    add_column :ais_articles, :image_url, :text
+    add_column :ais_articles, :content, :text
+    add_column :ais_articles, :content_2, :text
+    add_column :ais_articles, :content_3, :text
+    add_column :ais_articles, :content_4, :text
+    add_column :ais_articles, :content_5, :text
+    add_column :ais_articles, :image_url_2, :text
+    add_column :ais_articles, :image_url_3, :text
+    add_column :ais_articles, :image_url_4, :text
+    add_column :ais_articles, :image_url_5, :text
+    add_column :ais_articles, :image_url_6, :text
+    add_column :ais_articles, :image_url_7, :text
+    add_column :ais_articles, :image_url_8, :text
+    add_column :ais_articles, :image_url_9, :text
+    add_column :ais_articles, :image_url_10, :text
+    add_column :ais_articles, :image_url_11, :text
+    add_column :ais_articles, :image_url_12, :text
+    add_column :ais_articles, :image_url_13, :text
+    add_column :ais_articles, :image_url_14, :text
+    add_column :ais_articles, :image_url_15, :text
+    add_column :ais_articles, :legend_11, :text
+    add_column :ais_articles, :legend_12, :text
+    add_column :ais_articles, :legend_13, :text
+    add_column :ais_articles, :legend_14, :text
+    add_column :ais_articles, :legend_15, :text
+    add_column :ais_articles, :content_6, :text
+    add_column :ais_articles, :content_7, :text
+    add_column :ais_articles, :content_8_en, :text
+    add_column :ais_articles, :content_9_en, :text
+    add_column :ais_articles, :content_10_en, :text
+    add_column :ais_articles, :content_11_en, :text
+    add_column :ais_articles, :content_12_en, :text
+    add_column :ais_articles, :content_13_en, :text
+    add_column :ais_articles, :content_14_en, :text
+    add_column :ais_articles, :content_15_en, :text
+  end
+end
