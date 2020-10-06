@@ -79,7 +79,7 @@ opacity: 1 !important;
 }
 }
 
-@media screen and (max-width: 1189px){
+@media screen and (min-width: 200px){
 .display-grid-card{
   display: grid;
   grid-template-columns: 1fr;
