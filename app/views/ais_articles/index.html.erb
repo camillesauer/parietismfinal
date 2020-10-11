@@ -6,7 +6,33 @@
   <!--/.Controls-->
 </div>
 
-
+<% if user_signed_in? %>
+<div class="flex-admin-deux"><%= link_to "Ajouter un article", new_ais_article_path %></div>
+<% end %>
+<div class="center-div-2">
+  <p class="detailh">Tous les mois deux interventions d’artistes réalisées dans l’environnement urbain sont mises en avant sous forme de reportages photographiques. Le photojournaliste capte le moment de la rencontre entre l’oeuvre crée par l’artiste et le public spontané de cette intervention.</p>
+  <br>
+   <p class="detailg">Every month, two artists' interventions in the urban environment are highlighted in the form of photographic reports. The photojournalist captures the moment of the encounter between the work created by the artist and the spontaneous public of this intervention.</p>
+   <br>
+</div>
+<br>
+  <br>
+<div class="display-grid-card">
+ <% @ais_article.each do |ais_article| %>
+  <div id="container-t">
+    <div id="image" class="img-card"><%= image_tag("#{ais_article.image_url}") %></div>
+      <div id="text" class="solid">
+        <% if user_signed_in? %>
+            <h1 id="text-destroy"> <%= link_to 'Supprimer', ais_article_path(ais_article),
+            method: :delete,
+            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></h1>
+            <h1 id="text-edit"> <%= link_to "Editer", edit_ais_article_path(ais_article.id)%></h1>
+        <% end %>
+        <h1 id="text-date"><%= link_to "#{ais_article.title}", ais_article_path(ais_article.id)%></h1>
+      </div>
+  </div>
+  <% end %>
+   </div>
 
 <%= render "components/footer" %>
 
