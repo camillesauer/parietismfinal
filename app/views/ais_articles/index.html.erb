@@ -17,7 +17,16 @@
 </div>
 <br>
   <br>
-
+<div class="display-grid-card">
+ <% @ais_article.each do |ais_article| %>
+  <div id="container-t">
+    <div id="image" class="img-card"><%= image_tag("#{ais_article.image_url}") %></div>
+      <div id="text" class="solid">
+        <h1 id="text-date"><%= link_to "#{ais_article.title}", ais_article_path(ais_article.id)%></h1>
+      </div>
+  </div>
+  <% end %>
+   </div>
 
 <%= render "components/footer" %>
 
