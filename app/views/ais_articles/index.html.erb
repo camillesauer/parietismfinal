@@ -22,6 +22,12 @@
   <div id="container-t">
     <div id="image" class="img-card"><%= image_tag("#{ais_article.image_url}") %></div>
       <div id="text" class="solid">
+        <% if user_signed_in? %>
+            <h1 id="text-destroy"> <%= link_to 'Supprimer', ais_article_path(ais_article),
+            method: :delete,
+            data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></h1>
+            <h1 id="text-edit"> <%= link_to "Editer", edit_ais_article_path(ais_article.id)%></h1>
+        <% end %>
         <h1 id="text-date"><%= link_to "#{ais_article.title}", ais_article_path(ais_article.id)%></h1>
       </div>
   </div>
