@@ -21,6 +21,10 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+development:
+  <<: *default
+  database: parietismfinal_development
+
 production:
   <<: *default
   database: parietismfinal_development
@@ -85,8 +89,3 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: parietismfinal_production
-  username: parietismfinal
-  password: <%= ENV['PARIETISMFINAL_DATABASE_PASSWORD'] %>
