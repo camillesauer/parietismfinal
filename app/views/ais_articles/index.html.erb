@@ -20,10 +20,10 @@
 <div class="display-grid-card">
  <% @ais_article.each do |ais_article| %>
   <div id="container-t">
-    <div id="image" class="img-card"><%= image_tag("#{ais_article.image_url}") %></div>
+    <div id="image" class="img-card"><%= image_tag("#{ais_article.image_url_2}") %></div>
       <div id="text" class="solid">
         <% if user_signed_in? %>
-            <h1 id="text-destroy"> <%= link_to 'Supprimer', ais_article_path(ais_article),
+            <h1 id="text-destroy"> <%= link_to 'Supprimer', ais_article_path(ais_article.id),
             method: :delete,
             data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></h1>
             <h1 id="text-edit"> <%= link_to "Editer", edit_ais_article_path(ais_article.id)%></h1>
@@ -37,3 +37,4 @@
 <%= render "components/footer" %>
 
 </div>
+
