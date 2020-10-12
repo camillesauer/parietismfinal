@@ -13,7 +13,7 @@
 
 <div class="color-div-avatar-red">
   <h1 class="text-avatar-center-w">Bureau Exécutif</h1>
-<div class="display-grid-avatar-be">
+<div class="display-grid-avatar-bee">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
       <% if avatar.category.name == "Bureau exécutif" %>
@@ -44,7 +44,7 @@
 
 <div class="color-div-avatar-white">
   <h1 class="text-avatar-center-r">Communication</h1>
-<div class="display-grid-avatar-be">
+<div class="display-grid-avatar-bee">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
       <% if avatar.category.name == "Communication" %>
