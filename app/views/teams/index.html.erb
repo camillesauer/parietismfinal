@@ -13,7 +13,7 @@
 
 <div class="color-div-avatar-red">
   <h1 class="text-avatar-center-w">Bureau Exécutif</h1>
-<div class="display-grid-avatar-bee">
+<div class="display-grid-avatar-be">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
       <% if avatar.category.name == "Bureau exécutif" %>
@@ -44,7 +44,7 @@
 
 <div class="color-div-avatar-white">
   <h1 class="text-avatar-center-r">Communication</h1>
-<div class="display-grid-avatar-bee">
+<div class="display-grid-avatar-be">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
       <% if avatar.category.name == "Communication" %>
@@ -75,7 +75,7 @@
 
 <div class="color-div-avatar-red">
   <h1 class="text-avatar-center-w">Vidéaste</h1>
-<div class="display-grid-avatar-be">
+<div class="display-grid-avatar-bee">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
       <% if avatar.category.name == "Vidéaste" %>
@@ -136,36 +136,6 @@
 </div>
 </div>
 
-<div class="color-div-avatar-red">
-  <h1 class="text-avatar-center-w">Vidéaste</h1>
-<div class="display-grid-avatar">
-    <% category= "" %>
-    <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category.name == "Vidéaste" %>
-
-          <div class="card-trip-cinq card-trip-avatar ">
-            <% if user_signed_in? %>
-              <div class ="flex-admin">
-                <%= link_to 'Supprimer', avatar_path(avatar),
-                  method: :delete,
-                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
-                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
-              </div>
-          <% end %>
-          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_avatar}") %> </div>
-
-
-                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
-                <p><%= avatar.role %></p>
-                <%= link_to "En savoir plus", avatar.bio_url %>
-
-
-
-        </div>
-        <% end %>
-         <% end %>
-</div>
-</div>
 
 <%= render "components/footer" %>
 </div>
