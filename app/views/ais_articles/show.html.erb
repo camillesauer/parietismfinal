@@ -154,9 +154,9 @@
   <% if @ais_article.content_14_en != ""  %>
     <p id="english"><%= @ais_article.content_14_en %></p>
   <% end %>
-
+  <% if @ais_article.image_url_15 != ""  %>
     <%= image_tag("#{@ais_article.image_url_15}") %>
-
+  <% end %>
   <% if @ais_article.legend_15 != ""  %>
     <h5><%= @ais_article.legend_15 %></h5>
   <% end %>
