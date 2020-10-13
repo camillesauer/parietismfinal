@@ -11,7 +11,7 @@ class RirArticlesController < ApplicationController
   def create
     @rir_article = RirArticle.new(rir_article_params)
     if @rir_article.save!
-    redirect_to rir_article_path(@rir_article)
+    redirect_to themes_path
     end
 
     # Will rrire ActiveModel::ForbiddenAttributesError
