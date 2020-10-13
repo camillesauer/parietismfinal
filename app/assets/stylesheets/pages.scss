@@ -1255,13 +1255,12 @@ margin:7px;
   left: 0;
   top: 0;
 }
-#text { 
-  z-index: 100; 
-  position: absolute; 
-  left: 14px; 
-  top: 15px;
+#text {
+  z-index: 100;
+    position: absolute;
+    left: 13px;
+    top: 14px;
 }
-
 #text-interne {
   z-index: 100;
   position: absolute;
@@ -1446,10 +1445,12 @@ margin:7px;
   font-weight:bold !important;
 }
 
-.solid { 
-width: 270px; 
-height: 370px; 
-border: 8px solid #FFFFFF;
+.solid{
+
+  width: 290px;
+  height: 390px;
+  border: 10px solid #FFFFFF;
+
 }
 
 .detailg{
