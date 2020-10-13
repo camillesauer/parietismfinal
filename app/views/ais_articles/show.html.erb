@@ -26,9 +26,6 @@
 
 <div class="center-div-2">
 
-  <%= image_tag("#{@ais_article.image_url}") %>
-  <h5><%= @ais_article.legend %></h5>
-  <p><%= @ais_article.content %></p>
   <% if @ais_article.video != ""  %>
     <iframe width="845" height="560"
       src="<%= @ais_article.video %>"
@@ -37,6 +34,11 @@
       allowfullscreen>
     </iframe>
   <% end %>
+
+
+  <%= image_tag("#{@ais_article.image_url}") %>
+  <h5><%= @ais_article.legend %></h5>
+  <p><%= @ais_article.content %></p>
 
     <%= image_tag("#{@ais_article.image_url_2}") %>
 
