@@ -1236,10 +1236,11 @@ width: 750px !important;
 
 .img-card img{
   position: relative;
-  width: 316px;
-  height: 418px;
+  width: 300px;
+  height: 400px;
   object-fit:cover;
-  filter: grayscale(1);
+  filter: brightness(80%) grayscale(1) !important;
+
 }
 
 #container-t {
@@ -1254,12 +1255,14 @@ margin:7px;
   left: 0;
   top: 0;
 }
-#text {
-  z-index: 100;
-    position: absolute;
-    left: 13px;
-    top: 14px;
+
+#text { 
+  z-index: 100; 
+  position: absolute; 
+  left: 14px; 
+  top: 15px;
 }
+
 #text-interne {
   z-index: 100;
   position: absolute;
@@ -1347,7 +1350,7 @@ margin:7px;
 #text-date a{
   z-index: 100;
   position: absolute;
-  left: -30px;
+  left: -40px;
   width: 100px;
   top: 50px;
   text-align:center;
@@ -1360,7 +1363,7 @@ margin:7px;
 #text-date a:hover{
   z-index: 100;
   position: absolute;
-  left: -30px;
+  left: -40px;
   width: 100px;
   top: 50px;
     text-align:center;
@@ -1444,12 +1447,10 @@ margin:7px;
   font-weight:bold !important;
 }
 
-.solid{
-
-  width: 290px;
-  height: 390px;
-  border: 10px solid #FFFFFF;
-
+.solid { 
+width: 270px; 
+height: 370px; 
+border: 8px solid #FFFFFF;
 }
 
 .detailg{
