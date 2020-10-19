@@ -507,6 +507,13 @@ color:red;
   color: red;
   }}
 
+
+
+@media (max-width: 500px) {
+.display-info-article-show p{
+font-size:12px !important;
+  }}
+
 .card-trip-plus a {
 
   border-radius:5px;
