@@ -1,6 +1,6 @@
 class RirArticlesController < ApplicationController
   def index
-   @rir_article =  RirArticle.order(id: :asc)
+   @rir_article =  RirArticle.order(id: :desc)
 
   end
 
