@@ -22,7 +22,7 @@
             data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %></h1>
             <h1 id="text-edit"> <%= link_to "Editer", edit_rir_article_path(rir_article.id)%></h1>
         <% end %>
-        <h1 id="text-interne"><%= link_to "#{rir_article.title_rir}", rir_article_path(rir_article.id)%></h1>
+        <h1 id="text-interne"><%= link_to "#{rir_article.sous_titre_rir}", rir_article_path(rir_article.id)%></h1>
       </div>
   </div>
   <% end %>
