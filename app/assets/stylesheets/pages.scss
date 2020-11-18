@@ -886,7 +886,7 @@ margin: 30px;
 
 @media (min-width: 300px) {
 .img_article_show img{
-width: 280px !important;
+width: 250px !important;
 height: auto;
 border-radius: 10px;
 margin: 30px;
@@ -1035,7 +1035,7 @@ margin: 30px;
 @media (min-width: 200px) {
 .center-div-2 p{
 width: 100px;
-
+font-size: 15px;
 }
 }
 
@@ -1043,20 +1043,21 @@ width: 100px;
 @media (min-width: 300px) {
 .center-div-2 p{
 width: 280px !important;
-
+font-size: 15px;
 }
 }
 
 @media (min-width: 400px) {
 .center-div-2 p{
 width: 300px !important;
-
+font-size: 15px;
 }
 }
 
 @media (min-width: 500px) {
 .center-div-2 p{
 width: 400px !important;
+
 
 }
 }
@@ -1540,7 +1541,6 @@ width: 750px !important;
 @media (min-width: 200px) {
 .center-div-2 h5{
 width: 100px;
-
 }
 }
 
@@ -1647,15 +1647,29 @@ margin-left: 0px;
   color:grey !important;
 }
 
+@media (min-width: 501px) {
 .title-article{
 font-family: 'Bebas Neue', cursive;
-    margin-top: 50px;
+margin-top: 50px;
 font-style: normal;
 font-weight: normal;
 font-size: 40px !important;
 line-height: 50px;
 color: #E30613;
 }
+}
+
+@media (max-width: 500px) {
+.title-article{
+margin-top: 10px !important;
+font-family: 'Bebas Neue', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 40px !important;
+line-height: 50px;
+color: #E30613;
+}
+  }
 
 .title-article-b{
 font-family: 'Bebas Neue', cursive;
@@ -1715,11 +1729,11 @@ margin-left:40px;
 }
 
 .center-div-2 p{
-  font-size: 18px;
   line-height: 30px;
   font-family: 'Cabin', sans-serif;
   color: black;
   width: 800px;
+  font-size: 18px;
 }
 
 .center-div-2 h2{
