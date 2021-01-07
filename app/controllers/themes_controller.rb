@@ -1,6 +1,6 @@
 class ThemesController < ApplicationController
   def index
-    @themes = Theme.all
+    @themes = Theme.order(id: :desc)
   end
 
   def new
