@@ -71,7 +71,7 @@ opacity: 1 !important;
 
 
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
 .display-grid-card{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -79,7 +79,7 @@ opacity: 1 !important;
 }
 }
 
-@media screen and  (max-width: 1499px) {
+@media screen and (max-width: 1199px){
 .display-grid-card{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -87,7 +87,7 @@ opacity: 1 !important;
 }
 }
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1000px){
 .display-grid-card{
   display: grid;
   grid-template-columns: 1fr;
